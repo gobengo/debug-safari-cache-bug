@@ -1,0 +1,33 @@
+<!doctype html>
+
+<h1>Safari Cache Bug</h1>
+
+<h2>Iframe loading Collection A</h2>
+<iframe src="http://localhost:8081/inner.html"></iframe>
+
+<h2>Non-Iframe loading Collection A</h2>
+<div id="lf-wall">
+<script src="https://cdn.livefyre.com/Livefyre.js"></script>
+<script>
+// Livefyre.require(['streamhub-wall#3'], function (LiveMediaWall) {
+//   var wall = new LiveMediaWall({
+//     el: document.getElementById('lf-wall'),
+//     collection: {
+//       network: 'newsdigitalmedia.fyre.co',
+//       siteId: 369764,
+//       articleId: 'custom-1421648226505'
+//     }
+//   });
+// });
+Livefyre.require(['streamhub-wall#3'], function (LiveMediaWall) {
+  var wall = new LiveMediaWall({
+    el: document.getElementById('lf-wall'),
+    collection: {
+      network: 'livefyre.com',
+      siteId: 290596,
+      articleId: '279',
+      environment: 'qa-ext.livefyre.com'
+    }
+  });
+});
+</script>

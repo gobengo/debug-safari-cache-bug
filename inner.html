@@ -1,0 +1,29 @@
+<!doctype html>
+
+<h1>I am an iframed wall</h1>
+
+<div id="lf-wall">
+<script src="https://cdn.livefyre.com/Livefyre.js"></script>
+<script>
+// Livefyre.require(['streamhub-wall#3'], function (LiveMediaWall) {
+//   var wall = new LiveMediaWall({
+//     el: document.getElementById('lf-wall'),
+//     collection: {
+//       network: 'newsdigitalmedia.fyre.co',
+//       siteId: 369764,
+//       articleId: 'custom-1421648226505'
+//     }
+//   });
+// });
+Livefyre.require(['streamhub-wall#3'], function (LiveMediaWall) {
+  var wall = new LiveMediaWall({
+    el: document.getElementById('lf-wall'),
+    collection: {
+      network: 'livefyre.com',
+      siteId: 290596,
+      articleId: '279',
+      environment: 'qa-ext.livefyre.com'
+    }
+  });
+});
+</script>
